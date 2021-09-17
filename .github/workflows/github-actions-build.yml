@@ -1,7 +1,7 @@
 name: Java Backend Build Pipeline
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Build_Java_Backend_Artifact:
     runs-on: afernalc-linux-1
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -21,7 +21,7 @@ jobs:
         with:
           name: my-artifact
           path: target/*.jar
-  Explore-GitHub-Actions:
+  Start_Java_API_Backend:
     runs-on: afernalc-linux-1
     steps:
       - run: echo "Starting Java application..."
